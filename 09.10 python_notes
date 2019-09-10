@@ -1,0 +1,500 @@
+
+In [1]: today = "Tuesday"
+
+In [2]: "day" in today
+Out[2]: True
+
+In [3]: favorite_day = "Tuesday"
+
+In [4]: today == favorite_day
+Out[4]: True
+
+In [5]: #Operators that give us booleans 'a' = 'A'(False), 2>1 (True), 3 <=2 (FA
+   ...: LSE)
+
+In [6]: Pizza
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-6-f54f61686944> in <module>
+----> 1 Pizza
+
+NameError: name 'Pizza' is not defined
+
+In [7]: pizza != 'pinapple'
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-7-760ebeca1e0a> in <module>
+----> 1 pizza != 'pinapple'
+
+NameError: name 'pizza' is not defined
+
+In [8]: pizza  = 'pina'
+
+In [9]: pizza = "place"
+
+In [10]: None == False
+Out[10]: False
+
+In [11]: "b" in "banana"
+Out[11]: True
+
+In [12]: "c" not in "mango"
+Out[12]: True
+
+In [13]: bool(0)
+Out[13]: False
+
+In [14]: bool(1)
+Out[14]: True
+
+In [15]: str(4.5)
+Out[15]: '4.5'
+
+In [16]: float("5.23123")
+Out[16]: 5.23123
+
+In [17]: int(float("5.2313))
+  File "<ipython-input-17-507187db49ee>", line 1
+    int(float("5.2313))
+                       ^
+SyntaxError: EOL while scanning string literal
+
+
+In [18]: int(float("5.23123"))
+Out[18]: 5
+
+In [19]: type(print)
+Out[19]: builtin_function_or_method
+
+In [20]: type(type)
+Out[20]: type
+
+In [21]: type("banana")
+Out[21]: str
+
+In [22]: some_variable = 5
+
+In [23]: type(some_variable)
+Out[23]: int
+In [24]: camelCase = "camelCase"
+In [24]: camelCase = "camelCase"
+
+In [25]: snake_case_variables = "where_you_separte_words_with_underscores"
+
+In [26]: amount = 23
+
+In [27]: alternative_minimum_tax = 33.3
+
+In [28]: alternative_minimum_tax + 5
+Out[28]: 38.3
+
+In [29]: alternative_minimum_tax
+Out[29]: 33.3
+
+In [30]: total = 0
+
+In [31]: total = total + 1
+
+In [32]: total = total + 4
+
+In [33]: total += 10
+
+In [34]: total
+Out[34]: 15
+
+In [35]: greeting = "Hello, ""
+  File "<ipython-input-35-857a46631dd6>", line 1
+    greeting = "Hello, ""
+                         ^
+SyntaxError: EOL while scanning string literal
+
+
+In [36]: greeting = "Hello, "
+
+In [37]: greeting += "World!"
+
+In [38]: greeting
+Out[38]: 'Hello, World!'
+
+In [39]: greeting  = "Hello, "
+
+In [40]: greeting = greeting + "World!"
+In [41]: numbers = [1,2]
+In [41]: numbers = [1,2]
+
+In [42]: numbers.append(3)
+
+In [43]: numbers
+Out[43]: [1, 2, 3]
+
+In [44]: greeting = "Hello, "
+
+In [45]: greeting = "Hello"
+
+In [46]: syntax = ", "
+
+In [47]: recipient = "World!"
+
+In [48]: greeting + syntax + recipient
+Out[48]: 'Hello, World!'
+
+In [49]: result = greeting +syntax + recipient
+
+In [50]: result
+Out[50]: 'Hello, World!'
+
+In [51]: 2+3*2
+Out[51]: 8
+
+In [52]: 2+3*2*12**2
+Out[52]: 866
+In [53]: doing_python_right_now = True
+In [53]: doing_python_right_now = True
+
+In [54]: needing_a_break_right_now = True
+
+In [55]: needing_a_break_right_now or doing_python_right_now
+Out[55]: True
+
+In [56]: on_the_moon = False
+
+In [57]: doing_python_right_now or on_the_moon
+Out[57]: True
+
+In [58]: doing_python_right_now or on_the_moon
+Out[58]: True
+
+In [59]: doing_python_right_now and on_the_moon
+Out[59]: False
+
+In [60]: not on_the_moon
+Out[60]: True
+
+In [61]: 5/2
+Out[61]: 2.5
+
+In [62]: 5 // 2
+Out[62]: 2
+
+In [63]: 5 % 2
+Out[63]: 1
+
+In [64]: 13 % 10
+Out[64]: 3
+
+In [65]: 5 % 13
+Out[65]: 5
+
+In [66]: 12 % 2 == 0
+Out[66]: True
+
+In [67]: 12 % 2
+Out[67]: 0
+
+In [68]: 12 % 2 == 0
+Out[68]: True
+
+In [69]: "hello" + "world"
+Out[69]: 'helloworld'
+
+In [70]: "It is more likely that we'll use a single quote in a sentence"
+Out[70]: "It is more likely that we'll use a single quote in a sentence"
+
+In [71]: 'It\'s more likeley that we\'ll use a single quote in a sentence"
+  File "<ipython-input-71-95d113b163b7>", line 1
+    'It\'s more likeley that we\'ll use a single quote in a sentence"
+                                                                     ^
+SyntaxError: EOL while scanning string literal
+
+
+In [72]: "a" in "banana"
+Out[72]: True
+
+In [73]: "2" + 3
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-73-2091ad1d69ef> in <module>
+----> 1 "2" + 3
+
+TypeError: can only concatenate str (not "int") to str
+
+In [74]: int("2")  + 3
+Out[74]: 5
+
+In [75]: name = "world"
+
+In [76]: f'Hello {name}!'
+Out[76]: 'Hello world!'
+
+In [77]: f'Hello {}!'.format(name)
+  File "<ipython-input-77-18c2d332a0e6>", line 1
+    f'Hello {}!'.format(name)
+                             ^
+SyntaxError: f-string: empty expression not allowed
+
+
+In [78]: f'Hello {name}!'
+Out[78]: 'Hello world!'
+
+In [79]: name = 23
+
+In [80]: f'Hello {name}!'
+Out[80]: 'Hello 23!'
+
+In [81]: greeting
+Out[81]: 'Hello'
+
+In [82]: greeting.count("a")
+Out[82]: 0
+
+In [83]: "banana".count("b")
+Out[83]: 1
+
+In [84]: .count("b")
+  File "<ipython-input-84-e3c090327974>", line 1
+    .count("b")
+    ^
+SyntaxError: invalid syntax
+
+
+In [85]: "banana".split
+Out[85]: <function str.split(sep=None, maxsplit=-1)>
+
+In [86]: "banana".split()
+Out[86]: ['banana']
+
+In [87]: "banana".split("a")
+Out[87]: ['b', 'n', 'n', '']
+
+In [88]: "banana".lower().upper()
+Out[88]: 'BANANA'
+
+In [89]: fruits = ["banana", "mango", "kiwi"]
+
+In [90]: len(fruits)
+Out[90]: 3
+
+In [91]: fruits.append("strawberry")
+
+In [92]: fruits
+Out[92]: ['banana', 'mango', 'kiwi', 'strawberry']
+
+In [93]: fruits + fruits
+Out[93]:
+['banana',
+ 'mango',
+ 'kiwi',
+ 'strawberry',
+ 'banana',
+ 'mango',
+ 'kiwi',
+ 'strawberry']
+
+In [94]: list("banana")
+Out[94]: ['b', 'a', 'n', 'a', 'n', 'a']
+
+In [95]: output = list("banana")
+
+In [96]: "".join(output)
+Out[96]: 'banana'
+In [97]: fruits
+In [97]: fruits
+Out[97]: ['banana', 'mango', 'kiwi', 'strawberry']
+
+In [98]: for fruit in fruits:
+    ...:     fruit.capitalize()
+    ...:
+
+In [99]: for fruit in fruits:
+    ...:     output.append(fruit.capitalize())
+    ...:
+    ...:
+
+In [100]: output
+Out[100]: ['b', 'a', 'n', 'a', 'n', 'a', 'Banana', 'Mango', 'Kiwi', 'Strawberry']
+
+In [101]: output = fruits
+
+In [102]: output
+Out[102]: ['banana', 'mango', 'kiwi', 'strawberry']
+
+In [103]: [fruit.capitalize() for fruit  in fruits]
+Out[103]: ['Banana', 'Mango', 'Kiwi', 'Strawberry']
+
+In [104]: [x.capitalize () for x in fruits]
+Out[104]: ['Banana', 'Mango', 'Kiwi', 'Strawberry']
+
+In [105]: fruits
+Out[105]: ['banana', 'mango', 'kiwi', 'strawberry']
+
+In [106]: fruits = [fruit.capitalize() for fruit  in fruits]
+
+In [107]: fruits
+Out[107]: ['Banana', 'Mango', 'Kiwi', 'Strawberry']
+
+In [108]: [fruit.upper() for fruit in fruits if fruit == "Kiwi"]
+Out[108]: ['KIWI']
+
+In [109]:
+
+In [109]: [fruit.upper() for fruit in fruits if fruit != "Kiwi"]
+Out[109]: ['BANANA', 'MANGO', 'STRAWBERRY']
+
+In [110]: fruits = [fruit.upper() for fruit in fruits if fruit != "Kiwi"]
+
+In [111]: fruits
+Out[111]: ['BANANA', 'MANGO', 'STRAWBERRY']
+
+In [112]: fruits = ["mango", "kiwi", "pinapple"]
+
+In [113]: fruits
+Out[113]: ['mango', 'kiwi', 'pinapple']
+
+In [114]: [fruit.upper() if fruit == "kiwi" else fruit for fruit in fruits]
+Out[114]: ['mango', 'KIWI', 'pinapple']
+
+In [115]: a = [1,2,3]
+
+In [116]: b = a.copy()
+
+In [117]: a.append(4)
+
+In [118]: a
+Out[118]: [1, 2, 3, 4]
+
+In [119]: b
+Out[119]: [1, 2, 3]
+
+In [120]: immutable_list = (1, 2, 3)
+
+In [121]: immutable_lisl = list(immutable_list).append(4)
+
+In [122]: immutable_lisl
+
+In [123]: letters = ["a", "b", "c", "d", "e"]
+
+In [124]: letters
+Out[124]: ['a', 'b', 'c', 'd', 'e']
+
+In [125]: letter.index("e")
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-125-1feea89de32d> in <module>
+----> 1 letter.index("e")
+
+NameError: name 'letter' is not defined
+
+In [126]: letters.index("e")
+Out[126]: 4
+
+In [127]: letters[-1]
+Out[127]: 'e'
+
+In [128]: letters[-2]
+Out[128]: 'd'
+
+In [129]: letters
+Out[129]: ['a', 'b', 'c', 'd', 'e']
+
+In [130]: letters[2:4]
+Out[130]: ['c', 'd']
+
+In [131]: letters[:4]
+Out[131]: ['a', 'b', 'c', 'd']
+
+In [132]: chores = []
+
+In [133]: chores = ["take out the paper", "take out the trash", "wash dished"]
+
+In [134]: chores[0]
+Out[134]: 'take out the paper'
+
+In [135]: chores[2:3]
+Out[135]: ['wash dished']
+
+In [136]: chores[-1]
+Out[136]: 'wash dished'
+
+In [137]: nutritional_facts = {}
+
+In [138]: nutritional_facts["calories"]
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-138-b6aca51f9c7b> in <module>
+----> 1 nutritional_facts["calories"]
+
+KeyError: 'calories'
+
+In [139]: nutritional_facts["calories"] = 100
+
+In [140]: nutritional_facts["calories]
+  File "<ipython-input-140-a796a873eff0>", line 1
+    nutritional_facts["calories]
+                                ^
+SyntaxError: EOL while scanning string literal
+
+
+In [141]: nutritional_facts["calories"]
+Out[141]: 100
+
+In [142]: nutritional_facts
+Out[142]: {'calories': 100}
+
+In [143]: nutritional_facts["calories"] = 9000
+
+In [144]: nutritional_facts["name"] = "Double Stuffed"
+
+In [145]: nutritional_facts
+Out[145]: {'calories': 9000, 'name': 'Double Stuffed'}
+
+In [146]: computer = {}
+
+In [147]: computer = {
+     ...:     "make": "Apple",
+     ...:     "model": "Macbook Pro",
+     ...:     "year": "2017",
+     ...:     "OS": "Mac OS Mojave"
+     ...:     }
+
+In [148]: computer
+Out[148]:
+{'make': 'Apple',
+ 'model': 'Macbook Pro',
+ 'year': '2017',
+ 'OS': 'Mac OS Mojave'}
+
+In [149]: computer.keys
+Out[149]: <function dict.keys>
+
+In [150]: computer.keys()
+Out[150]: dict_keys(['make', 'model', 'year', 'OS'])
+
+In [151]: computer.items()
+Out[151]: dict_items([('make', 'Apple'), ('model', 'Macbook Pro'), ('year', '2017'), ('OS', 'Mac OS Mojave')])
+
+In [152]: computer.values()
+Out[152]: dict_values(['Apple', 'Macbook Pro', '2017', 'Mac OS Mojave'])
+
+In [153]: computer
+Out[153]:
+{'make': 'Apple',
+ 'model': 'Macbook Pro',
+ 'year': '2017',
+ 'OS': 'Mac OS Mojave'}
+
+In [154]: cup = {}
+
+In [155]: cup.volume = 32
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-155-a02a5daf761a> in <module>
+----> 1 cup.volume = 32
+
+AttributeError: 'dict' object has no attribute 'volume'
+
+In [156]: cup["volume"] = 32
+
+In [157]: cup["contents"] = "Water"
+
+In [158]: cup
+Out[158]: {'volume': 32, 'contents': 'Water'}
