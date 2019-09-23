@@ -65,7 +65,7 @@ type(fruits[0])
 for fruit in fruits:
     print(fruit)
 
-#
+#working with random numbers
 import random
 np.random.rand(10)
 
